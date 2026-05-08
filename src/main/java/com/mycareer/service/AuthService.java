@@ -53,7 +53,7 @@ public class AuthService {
         response.put("otpForDemo", otpResult.get("otpForDemo"));
         
         return response;
-    }
+    } 
     
     public User verifyOTPAndLogin(String email, String otpCode) {
         boolean verified = otpService.verifyOTPByEmail(email, otpCode);
